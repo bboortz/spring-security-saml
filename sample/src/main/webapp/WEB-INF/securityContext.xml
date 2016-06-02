@@ -115,6 +115,7 @@
     <bean id="metadataGeneratorFilter" class="org.springframework.security.saml.metadata.MetadataGeneratorFilter">
         <constructor-arg>
             <bean class="org.springframework.security.saml.metadata.MetadataGenerator">
+		<property name="entityId" value="urn:test:bboortz:braunschweig"/>
                 <property name="extendedMetadata">
                     <bean class="org.springframework.security.saml.metadata.ExtendedMetadata">
                         <property name="idpDiscoveryEnabled" value="true"/>
