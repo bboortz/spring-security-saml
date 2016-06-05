@@ -6,7 +6,8 @@
  * change the value of the key "entityId"
  * if you like add another Identity Provider (IDP)
   * See from line 141 to 183 in securityContext.xml
-  * Change the certificate in src/main/resources/security/samlKeystore.jks
+  * Change the public certificate in src/main/resources/security/samlKeystore.jks
+ * Change the private certificate in src/main/resources/security/samlKeystore.jks
 * mvn package
 * mvn tomcat7:run
 * access with a browser: http://localhost:8080/spring-security-saml2-sample/
